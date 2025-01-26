@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خدمات ساختمانی شهاب | ShahaBau</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            direction: rtl;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+        nav {
+            text-align: center;
+            padding: 10px;
+            background: #444;
+        }
+        nav a {
+            color: white;
+            margin: 10px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0px 0px 10px gray;
+            margin-top: 20px;
+            border-radius: 8px;
+        }
+        .service-box {
+            background: #eee;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #333;
+            color: white;
+            margin-top: 20px;
+        }
+        .lang-switch {
+            text-align: center;
+            margin: 10px;
+        }
+        .lang-switch button {
+            padding: 10px;
+            margin: 5px;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        function switchLanguage(lang) {
+            if (lang === 'fa') {
+                document.getElementById('title').innerText = "خدمات ساختمانی شهاب";
+                document.getElementById('about').innerText = "ما ارائه‌دهنده خدمات حرفه‌ای ساختمانی شامل تأسیسات، بازسازی، نماکاری و ... هستیم.";
+                document.getElementById('services-title').innerText = "خدمات ما";
+                document.getElementById('service1').innerText = "تأسیسات ساختمان";
+                document.getElementById('service2').innerText = "بازسازی و نوسازی";
+                document.getElementById('service3').innerText = "نماکاری و طراحی داخلی";
+                document.getElementById('footer').innerText = "تمامی حقوق محفوظ است. خدمات ساختمانی شهاب";
+            } else {
+                document.getElementById('title').innerText = "ShahaBau - Bau Dienstleistungen";
+                document.getElementById('about').innerText = "Wir bieten professionelle Baudienstleistungen wie Installation, Renovierung und Fassadengestaltung an.";
+                document.getElementById('services-title').innerText = "Unsere Dienstleistungen";
+                document.getElementById('service1').innerText = "Gebäudeinstallation";
+                document.getElementById('service2').innerText = "Renovierung und Sanierung";
+                document.getElementById('service3').innerText = "Fassadenbau und Innenarchitektur";
+                document.getElementById('footer').innerText = "Alle Rechte vorbehalten. ShahaBau Bau Dienstleistungen";
+            }
+        }
+    </script>
+</head>
+<body onload="switchLanguage('fa')">
+    <header>
+        <h1 id="title">خدمات ساختمانی شهاب</h1>
+    </header>
+    <nav>
+        <a href="#">صفحه اصلی | Startseite</a>
+        <a href="#">درباره ما | Über uns</a>
+        <a href="#">خدمات | Dienstleistungen</a>
+        <a href="#">نمونه کارها | Referenzen</a>
+        <a href="#">تماس با ما | Kontakt</a>
+    </nav>
+    <div class="lang-switch">
+        <button onclick="switchLanguage('fa')">فارسی</button>
+        <button onclick="switchLanguage('de')">Deutsch</button>
+    </div>
+    <div class="container">
+        <h2 id="services-title">خدمات ما</h2>
+        <p id="about">ما ارائه‌دهنده خدمات حرفه‌ای ساختمانی شامل تأسیسات، بازسازی، نماکاری و ... هستیم.</p>
+        
+        <div class="service-box" id="service1">تأسیسات ساختمان</div>
+        <div class="service-box" id="service2">بازسازی و نوسازی</div>
+        <div class="service-box" id="service3">نماکاری و طراحی داخلی</div>
+    </div>
+    <footer>
+        <p id="footer">تمامی حقوق محفوظ است. خدمات ساختمانی شهاب</p>
+    </footer>
+</body>
+</html>
